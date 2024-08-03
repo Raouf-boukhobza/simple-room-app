@@ -8,8 +8,9 @@ import androidx.room.RoomDatabase
     entities = [Contanct::class],
     version = 1
 )
-
 abstract class ContactDB : RoomDatabase() {
     abstract val dao : ContectsDao
-    
+
+
+
 }
