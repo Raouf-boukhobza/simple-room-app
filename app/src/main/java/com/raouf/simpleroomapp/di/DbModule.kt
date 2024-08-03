@@ -22,8 +22,8 @@ object DbModule {
     }
 
     @Provides
-    fun providedao(Conctactdb : ContactDB) : ContectsDao{
-        return Conctactdb.dao
+    fun providedao(conctactdb : ContactDB) : ContectsDao{
+        return conctactdb.dao
     }
 
 }

@@ -10,6 +10,6 @@ sealed interface ContactEvents {
     data class addNumber(val phoneNumber : String) : ContactEvents
     data object showdialog : ContactEvents
     data object hidedialog : ContactEvents
-    data class typesort (val typeSort : typesort?) : ContactEvents
+    data class sortContact (val sortType : Sorttype) : ContactEvents
     data class DeleteContect(val contect : Contact) : ContactEvents
 }

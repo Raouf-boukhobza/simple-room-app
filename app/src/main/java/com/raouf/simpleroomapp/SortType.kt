@@ -1,6 +1,6 @@
 package com.raouf.simpleroomapp
 
-enum class Typesort {
+enum class Sorttype {
     FirstName,
     LastName,
     PhoneNumber
