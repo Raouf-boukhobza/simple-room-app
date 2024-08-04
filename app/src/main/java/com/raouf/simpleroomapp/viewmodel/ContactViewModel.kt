@@ -1,7 +1,8 @@
-package com.raouf.simpleroomapp
+package com.raouf.simpleroomapp.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.raouf.simpleroomapp.data.local.Sorttype
 import com.raouf.simpleroomapp.data.local.Contact
 import com.raouf.simpleroomapp.data.local.ContectsDao
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -121,6 +122,4 @@ class ContactViewModel @Inject constructor(
 
         }
     }
-
-
 }

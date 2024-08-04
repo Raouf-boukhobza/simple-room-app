@@ -1,5 +1,6 @@
-package com.raouf.simpleroomapp
+package com.raouf.simpleroomapp.viewmodel
 
+import com.raouf.simpleroomapp.data.local.Sorttype
 import com.raouf.simpleroomapp.data.local.Contact
 
 
