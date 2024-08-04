@@ -8,18 +8,19 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface ContectsDao{
+
     @Upsert
-    suspend fun upsertcontact(contanct: Contanct)
+    suspend fun upsertcontact(contact: Contact)
 
     @Delete
-    suspend fun deletecontact(contanct: Contanct)
+    suspend fun deletecontact(contact: Contact)
 
-    @Query("select * from contanct order by firstName ASC")
-    fun getcontactorderbyfirstname() : Flow<List<Contanct>>
+    @Query("select * from contact order by firstName ASC")
+    fun getcontactorderbyfirstname() : Flow<List<Contact>>
 
-    @Query("select * from contanct order by lastName ASC")
-    fun getcontactorderbylastname() : Flow<List<Contanct>>
+    @Query("select * from contact order by lastName ASC")
+    fun getcontactorderbylastname() : Flow<List<Contact>>
 
-    @Query("select * from contanct order by phoneNumber ASC")
-    fun getcontactorderbyphonenumber() : Flow<List<Contanct>>
+    @Query("select * from contact order by phoneNumber ASC")
+    fun getcontactorderbyphonenumber() : Flow<List<Contact>>
 }

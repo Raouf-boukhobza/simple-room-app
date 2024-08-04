@@ -47,7 +47,7 @@ class ContactViewModel @Inject constructor(
         when(event){
             is ContactEvents.DeleteContect -> {
                 viewModelScope.launch {
-                    dao.deletecontact(event.contect)
+                    dao.deletecontact(event.contact)
                 }
             }
 

@@ -8,5 +8,5 @@ data class ContactState(
     val lastName : String = "",
     val phoneNumber : String = "",
     val isAddingContact : Boolean = false,
-    val sortType : Typesort = Typesort.FirstName
+    val sortType : Sorttype = Sorttype.FirstName
 )

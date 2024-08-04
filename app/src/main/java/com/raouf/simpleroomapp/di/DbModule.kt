@@ -16,14 +16,14 @@ import dagger.hilt.components.SingletonComponent
 object DbModule {
 
     @Provides
-    fun providedb(@ApplicationContext context : Context) : ContactDB{
+    fun providedb(@ApplicationContext context : Context) : ContactDB {
         return Room.databaseBuilder(context , ContactDB::class.java , "Contact")
             .build()
     }
 
     @Provides
     fun providedao(conctactdb : ContactDB) : ContectsDao{
-        return conctactdb.dao
+        return conctactdb.dao()
     }
 
 }
